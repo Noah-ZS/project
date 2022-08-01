@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="form.css">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<form onsubmit = " ()"  >
+
+    <p>Please fill in this form.</p>
+     <div><label for="Title"><b>Title</b></label></div>
+    <input type="text" placeholder="Enter Title" name="Title" id="Title" required>
+
+
+   
+	 <div><label for="fname"><b>First Name</b></label></div>
+    <input type="text" placeholder="Enter First Name" name="firstname" onkeyup="validateFirstName()"id="fname" required>
+		<span id = "fnameerror"> </span> 
+	
+
+ 
+	   <div><label for="lname"><b>Last Name</b></label></div>
+    <input type="text" placeholder="Enter Last Name" name="lastname" onkeyup="validateLastName()" id="lname" required>
+		<span id = "lnameerror"> </span> 
+	
+  <div><label for="Street"><b>Street</b></label></div>
+    <input type="text" placeholder="Enter Street" name="Street" id="Street" required>
+
+
+   
+	 <div><label for="City"><b>City</b></label></div>
+    <input type="text" placeholder="Enter City" list="Citylist" name="City" id="City" required>
+	<datalist id="Citylist">
+<option value="Port Louis" />
+<option value="Curepipe" />
+<option value="Quatres Bornes" />
+<option value="Rose Hill" />
+<option value="Beau Bassin" />
+<option value="Vacoas" />
+<option value="Mahebourg" />
+
+</datalist>
+
+ 
+	   <div><label for="number"><b>Mobile Contact Number</b></label></div>
+    <input type="text" placeholder="Enter Mobile Contact Number" name="Mobile Contact Number" onkeyup="validateNumber()" value = "5" id="number" required>
+		<span id = "numbererror"> </span> 
+
+
+  
+	  <div><label for="email"><b>Email</b></label></div>
+    <input type="email" placeholder="Enter Email" name="email" id="email" required>
+		<span id = "emailerror"> </span>
+		
+		
+	
+	  <div><label for="dob"><b>Enter your date of birth</b></label></div><span id = "errorage"></span>
+		<div class = "block">
+		<input type ="text" id = "date"onkeyup="age()" placeholder="dd"
+		min="1" maxlength="2" required>
+		
+		
+		<input type ="text" id = "month"onkeyup="age()" placeholder="mm"
+		minlength ="1" maxlength="2" required>
+		
+	
+		<input type ="text" id = "year"onkeyup="age()" placeholder="yyyy"
+		minlength ="4" maxlength="4" required></div>
+   
+
+
+	
+  
+  <label for="nat"><b>Choose your Nationality</b></label>
+  <select id="nat" onchange="toggle()" name="nationality">
+    <option value="Others" >Others</option>
+
+    <option value="Mauritian">Mauritian</option>
+  </select>
+  <label><b>Gender</b></label>
+  <input type="radio" name="g" checked="true">
+  <label for="male">M</label>
+  <input type="radio" name="g" >
+  <label for="female">F</label>
+
+
+
+  
+	 <div><div id = "hide" style="display:block;"><div><label for="spn"><b>Specify Nationality</b></label></div>
+    <input type="text" placeholder="Specify your nationality" name="spn" id="spn" required>
+	
+	
+ 
+		<div ><label for="pass"><b>Passport</b></label></div>
+    <input type="text" placeholder="Enter Passport" onkeyup="validatePassport()" name="pass" id="pass" required >
+		<span id = "passporte"> </span> 
+
+</div>
+	
+	
+  <div style="display: none;">
+    <input type="submit" name="prevent-enter-submit" onclick="return false;">
+  </div>
+
+	
+	  
+	<div id = "hide1" style="display:none;"><div><label for="NIC"><b>NIC</b></label></div>
+    <input type="text" placeholder="Enter NIC" onkeyup="validatenic()" name="NIC" id="NIC" required>
+		<span id = "NICERROR"> </span> </div>
+	
+	 <div><label for="psw"><b>Password</b></label></div>
+    <input type="password" placeholder="Enter Password" onkeyup="validatepw()" name="sw" id="pw" required>
+<span id = "pwerror"> </span> 
+
+<label><input type="checkbox" onclick="showpass()">Show Password</label>
+
+
+	 <div><label for="psw"><b>Repeat Password</b></label></div>
+    <input type="password" placeholder="Enter Password again" onkeyup="validatepw2()" name="sw" id="pw2" required>
+<span id = "pw2error"> </span> 
+
+
+ 
+
+  
+<div><label for = "term"> Click if you have read <a href="#"> terms and condition</a></label>
+<input type = "checkbox" id = "check" onclick = "checkbox()">
+<span id = "tc"></span></div>
+
+
+    <button type="submit" onclick="validateform();" class="registerbtn">Submit</button>
+	<span id = "submiterror"></span>
+    <input type="reset" class="resetbtn" onclick="return confirm_reset();">
+
+	
+
+
+  
+ 
+</form>
+<script src = "validation.js"></script>
+</body>
+</html>
