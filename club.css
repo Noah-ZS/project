@@ -1,0 +1,196 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+          
+        body {
+            max-width: 100%;
+            height: auto;
+         
+			
+        }
+          
+        .section {
+            
+            font-size: 20px;
+            color: black;
+            text-align: left;
+			
+       
+
+
+			
+        }
+          
+        .one,
+        .three {
+          
+        }
+          
+        .nav {
+       max-width: 100%;
+            height: 10%;
+           	background-color:#EAFF04;
+            font-size: x-large;
+            color: white;
+            text-align: center;
+            padding-top:20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            place-items: center;
+			margin-bottom:100px;
+		
+        }
+          
+        .btn {
+            color: white;
+            background-color: #37003C;
+			border-radius:5px;
+            height: 30px;
+            width: 	175px;
+            
+
+            text-decoration: none;
+        }
+		li {
+    font-size: 18px;
+    margin-left: 40px;
+
+    list-style-type: disc;
+
+	
+ }
+ 
+ .records{
+	 font-weight:bold;
+ }
+	.responsive{  
+max-width: 40%;
+height:100%;
+
+}
+.aligned{
+	display:flex;
+	align-items:top;
+	
+}
+#TitleDesc{
+
+	  background-color: #37003C;
+	  color:white;
+	  padding-left:5px;
+	 font-size:20px;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+#important{
+	color:yellow;
+}
+.info{
+	font-size:25px;
+	margin-bottom:10px;
+	text-align:center;
+	color:#00FF87;
+	 font-family: Arial, Helvetica, sans-serif;
+	 	border-radius:5px;
+}
+	  
+
+h3{
+	color:white;
+	height:50px;
+	
+	margin-bottom:0px;
+	margin-top:25px;
+	padding-top:20px;
+	text-align:center;
+		background-color:#02884E;
+		font-size:25px;
+		
+	
+	
+}.container {
+    
+ 
+	max-width:100%;
+	height:auto;
+	
+}
+
+
+.video {
+    max-wdith:100%;
+    float:right;
+
+   
+
+}  
+
+        footer{
+			font-size:20px;
+          
+              max-width: 100%;
+            height: 100px;
+			background-color:yellow;
+			text-align:center;
+			margin-top:20%;
+			
+        }
+
+iframe{
+	width:720px;
+	height:315px;
+	
+}
+
+.joe{
+	height:50%;
+wdith:50%;
+    float:right;
+}
+
+.background{
+	background-image: url(./icons/trophy.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding-top:75px;
+	color:white;
+font-size:35px;
+
+
+  font-weight: bold;
+	
+
+}
+
+.responsivetop{  
+max-width: 40%;
+height:auto;
+vertical-align:middle;
+padding-left:0px;
+
+}
+#records{
+	vertical-align:30px;
+	
+
+}
+#team{
+	background-image: url(./icons/trophy.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding-top:75px;
+	color:white;
+font-size:35px;
+height:20%;
+text-align:center;
+
+
+
+  font-weight: bold;
+	
+
+}
+	

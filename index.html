@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<title>Home</title>
+ <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="navbar.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Home</a>
+  
+  <a href="stats.html">All Time Stats</a>
+  <div class="dropdown">
+    <button class="dropbtn">Records
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Players.html">Players</a>
+     <a href="club.html" >Clubs</a>
+      <a href="Managers.html">Managers</a>
+    </div>
+  </div> 
+  <a href="contact.html">Contact Us</a>
+  <a href="javascript:void(0);" style="font-size:19px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</head>
+</html>
+<body>
+
+ 
+
+<div class="zoom"><h2>Information About This Website</h2>On this website,is a compilation of Premier League stats from its implementation to the present time.
+ <a id= "link" href ="stats.html">Premier League All Time Players and Club Statistics</a> as well as records set by <a id = "link" href =" Players.html">Players</a>,<a id = "link" href = "Club.html">Clubs</a> and Also <a id="link" href "Manangers.html"> Managers</a>. You can also see a <a id = "link" href = "stats.html#gallery">Picture Gallery Of all Premier 
+ League Winners since its introduction in 1992!</a></div>
+</body>
