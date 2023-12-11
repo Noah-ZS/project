@@ -1,0 +1,16 @@
+{
+	"name": "BabyGolem",
+	"short_name": "BabyGolem",
+	"description": "assignment1",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "landscape",
+	"background_color": "#ffffff",
+	"icons": [
+		{
+			"src": "icons/icon-16.png",
+			"sizes": "320x240",
+			"type": "image/png"
+		}
+	]
+}
